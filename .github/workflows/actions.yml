@@ -6,12 +6,12 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name: Chekout
+        uses: actions/checkout@v1
       - name: List Directory 
         run: |
           pwd 
           ls 
-      - name: Chekout
-        uses: actions/checkout@v1
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
