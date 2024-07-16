@@ -12,7 +12,7 @@ jobs:
         run: |
           pwd 
           ls
-          apt install zip
+          sudo apt install zip
           zip -V
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
