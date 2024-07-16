@@ -17,6 +17,7 @@ jobs:
           echo $GITHUB_WORKSPACE
           echo "${{github.token}}"
           apt install zip
+          zip -V
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
